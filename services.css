@@ -1,0 +1,117 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #00ffee;
+}
+html
+    {
+        font-size: 60%;
+        overflow-x: hidden;
+}
+body
+    {
+        background: black;
+        color: black;
+}
+.services{
+    background: var(--bg-color);
+    color: black;
+}
+.heading{
+    margin-bottom: 5rem;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.services-box{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.services-box:hover{
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.services-box .services-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.services-info h4{
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 2;
+}
+.services-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+/* .services-info{
+    background-color: var(--main-color);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.services-info:hover{
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+} */
+/* .services-box p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    /* max-height: 100px; */
+    line-height: 1.7;
+    margin: auto;
+}
+.services-box h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+} */
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+@media(max-width:991px){
+    .services{
+        padding-bottom: 7rem;
+    }
+}
